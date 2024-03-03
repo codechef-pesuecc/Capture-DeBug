@@ -1,0 +1,8 @@
+First the input is taken.
+A 2D array dp (dynamic programming array) of the same size is declared and initialized with zeros using memset.
+Two loops are used to initialize the first row and first column of the dp array. This is done by accumulating the values from the input matrix in a cumulative manner. It represents the cumulative sum along the top and left edges of the matrix.
+The nested loops iterate through the rest of the dp array, calculating the maximum sum path at each position. The value at dp[i][j] is determined by taking the maximum of the values from the top and left cells and adding the current matrix element a[i][j]. This is a dynamic programming approach to find the maximum sum path.
+Finally, the program prints the result, which is the maximum sum path found in the bottom-right cell of the dp array.
+
+Time complexity: O(n^2)
+Space Complexity: O(n^2)
