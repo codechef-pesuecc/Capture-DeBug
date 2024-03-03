@@ -1,0 +1,28 @@
+--Problem Name---
+DHONI MAGIC
+-----Problem Statement ---------------------
+Abhi is a die-hard fan of MS Dhoni, and believes his lucky number is 7, hence all numbers that contain only 7 are considered lucky. He also calls a number lucky if the number of lucky digits in it is a lucky number.
+
+Unfortunately , not all numbers are lucky; hence help Abhi find out if a given number 'n' is a lucky number.
+
+Example:7,77 etc are all considered lucky numbers. 7077707077 is also a lucky number as there are 7 lucky digits
+
+---Input Format----
+
+The only line contains an integer n (1 ≤ n ≤ 10^18).
+
+----Output Format----
+
+Print on the single line "YES" if n is a  lucky number. Otherwise, print "NO" .
+
+---Constraints----
+1≤N≤10^18
+
+--Sample input 0---
+777
+---Sample Output 0----
+YES
+--Sample input 1---
+7770
+---Sample Output 1----
+NO

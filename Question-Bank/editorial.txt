@@ -1,0 +1,70 @@
+
+The dynamic programming approach is used to calculate the number of distinct ways to solve the last question in the question bank
+
+
+Explanation :
+
+For input:
+2
+There are two ways.
+1. solve 1st question + solve second question
+2. skip 1st question + solve second question
+
+For input :
+3
+There are three ways.
+1.solve 1st + solve 2nd + solve 3rd question
+2.solve 1st + skip 2nd + solve 3rd question 
+3.skip 1st + solve 2nd + solve 3rd question
+
+
+
+Memoization method for better understanding
+
+vector<int>dp(n+1,-1);
+if(n==1 || n==2)return n;
+        dp[1]=1;
+        dp[2]=2;
+        for(int i =3;i<=n;i++){
+            dp[i]=dp[i-1]+dp[i-2];
+        }
+        return dp[n];
+
+
+
+Space Optimization can be done as following to reduce space complexity to O(1).
+
+The solution uses two variables, prev2 and prev1, to keep track of the number of ways to solve the last question at each step. It iterates through the questions from 2 to n, calculating the number of ways to solve the last question at each step based on the previous two steps.
+
+At each step, the solution updates the variables as follows:
+
+'ans' is calculated as the sum of prev2 and prev1.
+'prev2' is updated to the previous value of prev1.
+'prev1' is updated to the value of ans.
+int prev2=1;
+        int prev1=1;   
+        int ans;
+        for(int i=2;i<=n;i++){
+            ans=prev2+prev1;
+            prev2=prev1;
+            prev1=ans;
+        }
+        if(n==1){
+            cout<<1;
+        }
+        else{
+            cout<<ans;
+        }
+
+
+
+
+
+Time Complexity:
+The time complexity is O(n), where n is the number of question in question bank.
+
+Space Copmlexity:
+The space complexity of this algorithm is O(1), as constant amount of extra space is used.
+Memoization method uses extra linear space so space complexity for memoization method will be O(n).
+
+

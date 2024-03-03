@@ -1,0 +1,15 @@
+The decryption algorithm is nothing but the post order traversal of the constructed binary search tree. 
+
+Visit the left subtree by recursively traversing all the nodes in the left subtree.
+Visit the right subtree by recursively traversing all the nodes in the right subtree.
+Finally, visit the current node itself.
+So, in postorder traversal, you first explore the entire left subtree, then the right subtree, and finally visit the current node.
+
+This traversal order is often used to process the nodes in a tree in a specific sequence, such as performing certain operations or obtaining a desired output.
+
+Time Complexity: It is O(n)  where n is the number of nodes.
+
+Space Complexity: It is O(n) where n is the number of nodes.
+
+
+

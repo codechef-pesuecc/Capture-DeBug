@@ -1,0 +1,38 @@
+Problem Name: Beautiful Array
+problem stmt: 
+You are given two integers n and k
+An array a1,a2,…,an of length n, consisting of zeroes and ones is beautiful if for all integers i from 1 to n both of the following conditions are satisfied:
+ -->at least ⌈i/k⌉ of the first i elements of a are equal to 1
+ -->at least ⌈i/k⌉  of the last i elements of a are equal to 1
+Here, ⌈i/k⌉ denotes the result of division of i by k, rounded up. For example, ⌈6/3⌉=2, ⌈11/5⌉=⌈2.2⌉=3 and 
+⌈7/4⌉=⌈1.75⌉=2
+Find the minimum possible number of ones in a beautiful array.
+
+Explanation:
+For example
+Let n=3,k=2
+Array [1,0,1] is good and the number of ones in it is 2
+Arrays [0,0,0], [0,1,0] and [0,0,1] are not good since for i=1 the first condition from the statement is not satisfied.
+Array [1,0,0] is not good since for i=1 the second condition from the statement is not satisfied.
+All other arrays of length 3 contain at least 2 ones. Thus the answer is 2 
+
+Input format:
+The first line is a single integer 't' - number of test cases
+The only line of each test case contains two integers n, k (1≤k≤n) — the length of array and parameter k from the statement.
+
+Output format: 
+For each test case output one integer — the minimum possible number of ones in a beautiful array.
+
+It can be shown that under the given constraints at least one beautiful array always exists.
+
+Constraints: 
+t - (1 ≤ t ≤ 10^4)
+n - (2 ≤ n ≤ 100) 
+
+Sample Input 0:
+2
+3 2
+5 2
+Sample Output 0:
+2
+3

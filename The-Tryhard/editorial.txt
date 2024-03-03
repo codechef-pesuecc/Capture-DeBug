@@ -1,0 +1,5 @@
+If all the elements are equal, then there is nothing to do, hence the answer is zero.
+
+Otherwise, we have to find the index of the max element in the array which is closest to the end of the array.
+
+We them swap this maximum elements to the element on the right till we get to the last. Now, apply operation 2 to make the entire array equal to the max element.

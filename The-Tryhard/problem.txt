@@ -1,0 +1,47 @@
+Title: The Try-hard
+
+Description: 
+
+Yuvraj was a coding try-hard. He codes he best when he eats his favorite food. And his favorite food is the one with the most cheese in it. 
+
+You are given a list of 'n' foods with the amount of cheese in it. The ith food has a[i] amount of cheese in it.
+
+You can do 2 operations any number of times(possibly zero) on the foods.
+
+1. Choose an index i such that, 1 <= i < n, and swap a[i] and a[i+1].
+
+2. Choose the last element, a[n] and make all elements equal to this element, more formally, assign, a[1] = a[n], a[2] = a[n], ... , a[n-1] = a[n].
+
+Output the minimum number of operations required to make all foods have the maximum amount of cheese. That is, make all elements of the array equal to the maximum.
+
+Example: 
+
+n = 5
+a = [1,2,3,5,4]
+
+By applying operation 1 on the index 4, we get a = [1,2,3,4,5].
+Now by applying the operation 2 on the array, we have, a = [5,5,5,5,5].
+
+Standard Input:
+
+The first line contains a positive integer n, the number of foods.
+The second line contains, n space-separated integers, where a[i] is the ith integer.
+
+Standard Output:
+
+Print one integer, the minimum number of operations required to make all the elements of the array equal to the maximum element.
+
+Constraints:
+
+1 <= n <= 10^5
+0 <= a[i] <= 10^9
+
+Input:
+
+5
+1 2 3 5 4
+
+
+Output:
+
+2
