@@ -1,0 +1,14 @@
+Hints:
+The first and last elements are always equal to 1
+
+There are at least [(n−1)/k] ones among the first n−1 elements.
+Solution
+Let's find lower bound for answer. In any beautiful array, there are at least ⌈(n−1)/k⌉ ones among the first n−1 elements. Also, a(n) is always 1, as [1/k]=1
+So there are at least [(n−1)/k]+1 ones in any beautiful array.
+
+This lower bound can always be achieved by placing ones on position n and on positions 1+k⋅x for all integers x such that 0≤x≤[(n−2)/k]=[(n−1)/k]−1
+
+The answer to the problem is [(n−1)/k]+1
+
+TC: O(1)
+SC:O(1)

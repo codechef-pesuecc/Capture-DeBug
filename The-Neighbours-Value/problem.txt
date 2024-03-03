@@ -1,0 +1,38 @@
+NEIGHBOURS VALUE 
+
+Problem Statement: 
+
+Given an array of n integers. All elements are initially unmarked.
+
+In one operation, you can pick the largest number that has not been marked. Remove that element along with its neighbouring elements (if they exist). Now add the neighbouring elements into the answer.
+
+Repeat this until you mark all the elements of the array.
+
+Output the answer at the end.
+
+INPUT FORMAT: 
+The first line of the input contains a single integer T
+denoting the number of test cases. The description of 
+T test cases follows. 
+First line consists of an integer N denoting the number of elements in the array. 
+Second line contains N space-separated integers A0, A1, ..., An-1. 
+
+OUTPUT FORMAT: 
+For each test case print the value of the array in a new line. 
+
+CONSTRAINTS: 
+1 <= n <= 10^5 
+1 <= A1,A2,....An <= 10^6  
+
+SAMPLE INPUT 0: 
+1
+5
+2 3 4 8 1 
+
+SAMPLE OUTPUT 0: 
+7 
+
+EXPLANATION:  
+Initially, all elements are unmarked, the largest element is 8 and its neighbouring elements are 4 and 1, 8,4,1 are now marked and (4+1) is added to the answer. Now 3 is the largest element and 2 is the neighbouring element. Therefore, the value of the array is 4+1+2 = 7
+
+

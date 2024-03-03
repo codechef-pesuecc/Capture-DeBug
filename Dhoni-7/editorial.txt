@@ -1,0 +1,8 @@
+In this problem you just need to find if a number contains only 7's or if the number of lucky digits in n  is equal to  7 and output YES
+NO otherwise.
+
+---TC----
+O(1)
+
+-----SC----
+O(1)

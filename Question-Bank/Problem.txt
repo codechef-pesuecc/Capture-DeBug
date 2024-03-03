@@ -1,0 +1,42 @@
+Problem Name:  Question Bank
+
+Problem stmt:
+A student is attempting to solve a Mathematics Question Bank containing 'n' questions. However, due to time constraints, the student cannot solve all the questions but student is eager to reach last question and solve it to finish Question Bank within given time, therefore he decides to skip few questions. The student  decides to either solve a question and move to the next one or skip a question, but if a question is skipped, the student will solve the next question. The goal is to determine the number of distinct ways the student solve the last question in the Question Bank.
+
+Input format:
+Integer 'n' representing total number of questions in Question Bank.
+
+Output format: 
+Print Integer representing total number of ways to solve the last question inorder to complete Question Bank.
+
+Constraints: 
+1 <= n <= 45
+
+
+Sample input0: 
+2
+sample output0:  
+2
+There are two ways.
+1. solve 1st question + solve second question
+2. skip 1st question + solve second question
+
+
+Sample input1: 
+3
+sample output1:  
+3
+1.solve 1st + solve 2nd + solve 3rd question
+2.solve 1st + skip 2nd + solve 3rd question 
+3.skip 1st + solve 2nd + solve 3rd question
+
+sample input2:
+5
+sample output 2:
+8
+
+
+
+
+
+

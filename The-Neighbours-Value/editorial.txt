@@ -1,0 +1,10 @@
+To solve the problem, we maintain a visited array to keep track of marked elements in the input array. First, we insert all elements of the input array along with their index positions in decreasing order into a set data structure. This ensures that we process larger values first, which is important for the correctness of the algorithm.
+
+Next, we traverse the set in order and for each unmarked element, we add its neighboring elements to a sum and mark them as visited. We repeat this process until we have visited all elements in the set. Finally, we output the sum of all neighboring values that were calculated during the traversal.
+
+The time complexity of the algorithm depends on the size of the input array and the number of neighboring elements that need to be processed. The space complexity of the algorithm is O(n), where n is the size of the input array, due to the visited array and the set data structure used to store the elements.
+
+
+
+
+
