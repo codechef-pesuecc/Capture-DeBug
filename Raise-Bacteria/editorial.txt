@@ -1,0 +1,1 @@
+Write down x into its binary form. If the ith least significant bit is 1 and x contains n bits, we put one bacteria into this box in the morning of (n + 1 - i)th day. Then at the noon of the nth day, the box will contain x bacteria. So the answer is the number of ones in the binary form of x.

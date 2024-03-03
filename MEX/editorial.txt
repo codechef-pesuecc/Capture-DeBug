@@ -1,0 +1,6 @@
+First, we take input of the array and it's size.
+Then, we will sort the array and then initialize a variable to 1.
+Then, iterate the array. If the value of the element at the array index matches res, increment it. Else, break and return the element, since that element is the missing element.
+
+Time complexity: O(n)
+Space complexity: O(1)
